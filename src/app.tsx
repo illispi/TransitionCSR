@@ -10,7 +10,7 @@ export default function App() {
 		<Router
 			root={(props) => (
 				<MetaProvider>
-					//NOTE If you comment out this TransitionComp, CSR works again
+					{/* NOTE If you comment out this TransitionComp, CSR works again */}
 					<TransitionComp>
 						<Suspense>{props.children}</Suspense>
 					</TransitionComp>
