@@ -1,18 +1,5 @@
-import { mergeRefs } from "@solid-primitives/refs";
-import type { AxisOptions, BarChartOptions } from "chartist";
 import { BarChart } from "chartist";
-import type { Component } from "solid-js";
-import {
-	Show,
-	Suspense,
-	createEffect,
-	createUniqueId,
-	onCleanup,
-} from "solid-js";
-
-interface Adds extends BarChartOptions<AxisOptions, AxisOptions> {
-	height?: string;
-}
+import { createEffect } from "solid-js";
 
 import "../index.css";
 

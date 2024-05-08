@@ -1,5 +1,8 @@
 import { A } from "@solidjs/router";
-import BarChartCustomtest from "~/components/TestChart";
+import { clientOnly } from "@solidjs/start";
+//NOTE fails on both clientOnly or regular component
+// import BarChartCustomtest from "~/components/TestChart";
+const BarChartCustomtest = clientOnly(() => import("~/components/TestChart"));
 
 export default function Home() {
 	return (
