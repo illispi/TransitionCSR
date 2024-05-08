@@ -9,7 +9,8 @@ export default function Home() {
 		<main>
 			<BarChartCustomtest />
 			<div>
-				test, should fail on CSR due div not being created for BarChartCustom
+				test, should fail on CSR due div not being created for BarChartCustom,
+				if you comment out BarChart you shouls see nothing
 			</div>
 		</main>
 	);
